@@ -1,2 +1,11 @@
 coco convertion cmd:
 python voc2coco.py annotations output.json
+
+https://www.youtube.com/watch?v=cZuvAbN6UBU
+
+https://github.com/patrickloeber/pytorchTutorial
+https://www.youtube.com/watch?v=EMXfZB8FVUA&list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4
+
+
+https://github.com/krishnaik06/Pytorch-Tutorial
+https://www.youtube.com/watch?v=U0i7-c3Vrgc&list=PLZoTAELRMXVNxYFq_9MuiUdn2YnlFqmMK
