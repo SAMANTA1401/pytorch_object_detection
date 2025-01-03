@@ -3,7 +3,7 @@ pytorch-ignite
 torchvision
 labelImg
 pandas
-openv-python
+opencv-python
 albumentations
 matplotlib
 tqdm
@@ -22,4 +22,4 @@ PyYAML
 dill==0.3.5.1
 utils
 
--e .
+# -e .

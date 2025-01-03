@@ -137,7 +137,7 @@ class ModelEvaluation:
 
             s3_all_losses_dict, s3_all_losses = self.evaluate(s3_model,test_loader, device=DEVICE)
 
-            if s3_all_losses > all_losses:
+            if s3_all_losses > all_losses: # compare loss between s3 model and current model
                 # 0.03 > 0.02
                 is_model_accepted = True
 

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from from_root import from_root
 from src.constants import *
-from src.configuration.s3_operations import S3Operation
+from src.configuration.s3_operation import S3Operation
 import os
 
 
@@ -70,3 +70,40 @@ class ModelPusherConfig:
         self.BEST_MODEL_PATH: str = os.path.join(self.TRAINED_MODEL_DIR,TRAINED_MODEL_NAME)
         self.BUCKET_NAME: str = BUCKET_NAME
         self.S3_MODEL_KEY_PATH: str = os.path.join(TRAINED_MODEL_NAME)
+
+
+
+# a data class is a type of class that mainly contains data and requires little to no boilerplate code. Data classes were introduced in Python 3.7 as a part of PEP 557.
+# Benefits of Data Classes
+# Data classes provide several benefits, including:
+# Less Boilerplate Code: Data classes automatically generate special methods like __init__, __repr__, and __eq__, which reduces the amount of boilerplate code you need to write.
+
+# @dataclass
+# class Person:
+#     name: str
+#     age: int
+#     def greet(self):
+#         print(f"Hello, my name is {self.name} and I'm {self.age} years old.")
+
+# he Person data class has two attributes: name and age. The @dataclass decorator automatically generates the special methods for the class.
+# person1 = Person("John Doe", 30)
+# person2 = Person("John Doe", 30)
+
+# print(person1)  # Output: Person(name='John Doe', age=30)
+# print(person1 == person2)  # Output: True
+# person = Person("John Doe", 30)
+# person.greet()  # Output: Hello, my name is John Doe and I'm 30 years old.
+
+
+# from dataclasses import dataclass, field
+
+# @dataclass
+# class Person:
+#     age: int = field(init=False)
+#     name: str
+
+#     def __post_init__(self):
+#         self.age = 30
+
+# person = Person("John Doe")
+# print(person)  # Output: Person(age=30, name='John Doe')
